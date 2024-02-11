@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:  wrap;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: Thistle;
+    border: 2px solid gold;
+    border-radius: 4px;
+    text-align: center;
+}
+
+img{
+    width: 75%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.img1{
+   animation: borderanimation 6s infinite;
+}
+
+.img2{
+    animation: imgSize 10s infinite;
+}
+
+.item3{
+    animation: textcolor 5s infinite;
+}
+
+/* define the animation */
+@keyframes borderanimation{
+    /* stage - properties - values */
+    0%{
+        border: 7px solid #C15604;
+    }
+    20%{
+        border: 7px solid #ECB410;
+    }
+    50%{
+        border: 7px solid #797920;
+    }
+    70%{
+        border: 7px solid #925F17;
+    }
+    100%{
+        border: 7px solid #E9BF59;
+    }
+}
+
+@keyframes imgSize{
+    0%{
+        width: 75%;
+        height: 85%;
+    }
+    50%{
+        width: 40%;
+        height: 50%;
+    }
+    100%{
+        width: 75%;
+        height: 85%;
+    }
+}
+
+@keyframes textcolor{
+    /* stage - properties - values */
+    0%{
+        color: #0A9396;
+        font-weight: bold;
+    }
+    20%{
+        color: #94D2BD;
+        font-weight: bold;
+    }
+    50%{
+        color: #E9D8A6;
+        font-weight: bold;
+    }
+    70%{
+        color: #CA6702;
+        font-weight: bold;
+    }
+    100%{
+        color: #BB3E03;
+        font-weight: bold;
+    }
+}
